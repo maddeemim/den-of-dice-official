@@ -1,78 +1,104 @@
-body {
-  background-color: #111;
-  color: #eee;
-  font-family: 'Lora', serif;
-  margin: 0;
-  padding: 0;
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Inter:wght@300;500;700&display=swap');
+
+:root {
+  --bg-dark: #0f0f11;
+  --gray-dark: #1a1a1d;
+  --gray-mid: #2a2a2d;
+  --gray-light: #cccccc;
+  --accent-silver: #e0e0e0;
+  --accent-purple: #9d4edd;
+  --font-header: 'Cinzel Decorative', serif;
+  --font-body: 'Inter', sans-serif;
 }
 
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--bg-dark);
+  color: var(--gray-light);
+}
+
+/* Header */
 header {
   text-align: center;
-  padding: 2rem 1rem;
-  background-color: #1b1b1b;
-  border-bottom: 2px solid #daa520;
+  padding: 3rem 1rem 2rem;
+  background: var(--gray-dark);
+  border-bottom: 1px solid var(--gray-mid);
 }
 
 h1 {
-  font-family: 'Cinzel Decorative', cursive;
-  color: #daa520;
+  font-family: var(--font-header);
+  color: var(--accent-purple);
   font-size: 3rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.3rem;
 }
 
 .subtitle {
   font-size: 1.2rem;
-  color: #bbb;
+  color: var(--accent-silver);
 }
 
+/* Cast Grid */
 .cast-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 2rem 1rem;
   gap: 2rem;
+  padding: 3rem 2rem;
+  background-color: var(--bg-dark);
 }
 
+/* Cast Card */
 .cast-card {
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid #444;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--gray-mid);
   border-radius: 12px;
-  padding: 1rem;
+  padding: 1.5rem;
   text-align: center;
-  width: 250px;
-  box-shadow: 0 0 10px #000;
-  transition: transform 0.3s ease;
+  width: 260px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 0 transparent;
 }
 
 .cast-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 15px #daa520;
+  transform: translateY(-6px);
+  box-shadow: 0 0 15px var(--accent-purple);
 }
 
 .cast-card img {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 1rem;
+  border: 2px solid var(--gray-mid);
 }
 
+/* Card Text */
 .cast-card h2 {
-  font-family: 'Cinzel Decorative', cursive;
-  color: #daa520;
-  font-size: 1.5rem;
-  margin: 0.5rem 0;
+  font-family: var(--font-header);
+  font-size: 1.4rem;
+  margin: 0.5rem 0 0.25rem;
+  color: var(--accent-silver);
 }
 
-.cast-card .tagline {
+.cast-card p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  color: var(--gray-light);
+}
+
+.tagline {
   font-style: italic;
-  color: #ccc;
+  color: var(--accent-purple);
+  font-size: 0.9rem;
 }
 
+/* Footer */
 footer {
   text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: #777;
-  background-color: #1b1b1b;
-  margin-top: 2rem;
+  padding: 2rem 1rem;
+  font-size: 0.85rem;
+  color: var(--gray-light);
+  border-top: 1px solid var(--gray-mid);
+  background-color: var(--gray-dark);
 }
-  
