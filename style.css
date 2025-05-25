@@ -44,9 +44,10 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 2.5rem;
   padding: 3rem 2rem;
-  background-color: var(--bg-dark);
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Cast Card */
