@@ -129,7 +129,7 @@ h1 {
 }
 
 .character-card-box img {
-  width: 1051px !important;
+  width: 720px !important;
   heigt: auto;
   border-radius: 12px;
   border: 2px solid var(--gray-mid);
