@@ -136,10 +136,10 @@ h1 {
   box-shadow: 0 0 15px rgba(157, 78, 221, 0.2);
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .portrait-box.cast-card,
   .character-card-box img {
-    width: 90vw; /* Use nearly full width on mobile */
+    width: 90vw; Use nearly full width on mobile 
     max-width: 350px;
   }
 
@@ -148,6 +148,7 @@ h1 {
     align-items: center;
   }
 }
+*/
 
 /* Footer */
 footer {
