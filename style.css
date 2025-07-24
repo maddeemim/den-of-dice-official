@@ -111,7 +111,8 @@ h1 {
 }
 
 .portrait-box.cast-card {
-  width: 420px;
+  width: 350px;
+  object-fit: cover;
   padding: 1.5rem;
   background-color: rgba(15, 15, 17, 0.85); /* keeps visual contrast */
   border: 1px solid var(--gray-mid);
@@ -120,7 +121,7 @@ h1 {
 }
 
 .portrait-box img {
-  width: 100%;
+  width: 100%;  
   object-fit: cover;
   margin-bottom: 1rem;
   border-radius: 10px;
@@ -128,10 +129,24 @@ h1 {
 }
 
 .character-card-box img {
-  width: 420px;
+  width: 350px;
+  heigt: auto;
   border-radius: 12px;
   border: 2px solid var(--gray-mid);
   box-shadow: 0 0 15px rgba(157, 78, 221, 0.2);
+}
+
+@media (max-width: 768px) {
+  .portrait-box.cast-card,
+  .character-card-box img {
+    width: 90vw; /* Use nearly full width on mobile */
+    max-width: 350px;
+  }
+
+  .cast-row {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* Footer */
