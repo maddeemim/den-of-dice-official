@@ -111,7 +111,7 @@ h1 {
 }
 
 .portrait-box {
-  width: 580px;
+  width: 720px;
   object-fit: cover;
   padding: 1.5rem;
   background-color: rgba(15, 15, 17, 0.85); /* keeps visual contrast */
@@ -129,8 +129,8 @@ h1 {
 }
 
 .character-card-box img {
-  width: 650px;
-  heigt: 650PX;
+  width: 720px;
+  heigt: 720PX;
   border-radius: 12px;
   border: 2px solid var(--gray-mid);
   box-shadow: 0 0 15px rgba(157, 78, 221, 0.2);
