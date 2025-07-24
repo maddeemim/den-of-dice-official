@@ -106,29 +106,32 @@ h1 {
   gap: 2rem;
   flex-wrap: wrap;
   margin-bottom: 4rem;
+  z-index: 1;
+  position: relative;
 }
 
-/* Match character card size */
-.character-card-box img {
+.portrait-box.cast-card {
   width: 420px;
-  height: auto;
-  border-radius: 12px;
-  border: 2px solid var(--gray-mid);
+  padding: 1.5rem;
+  background-color: rgba(15, 15, 17, 0.85); /* keeps visual contrast */
+  border: 1px solid var(--gray-mid);
+  border-radius: 18px;
   box-shadow: 0 0 15px rgba(157, 78, 221, 0.2);
 }
 
-/* Override default .cast-card size */
-.portrait-box.cast-card {
-  width: 420px;
-  min-height: auto;
-  padding: 1.5rem;
-}
-
 .portrait-box img {
-  width: 420px;
-  height: auto;
+  width: 100%;
   object-fit: cover;
   margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 2px solid var(--gray-mid);
+}
+
+.character-card-box img {
+  width: 420px;
+  border-radius: 12px;
+  border: 2px solid var(--gray-mid);
+  box-shadow: 0 0 15px rgba(157, 78, 221, 0.2);
 }
 
 /* Footer */
