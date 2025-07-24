@@ -55,7 +55,8 @@ h1 {
   border-radius: 18px;
   padding: 2.5rem 2rem;
   text-align: center;
-  min-height: 620px;
+  height: 720px;
+  width: 720px;
   box-shadow: 0 0 15px rgba(157, 78, 221, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
