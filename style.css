@@ -130,7 +130,7 @@ h1 {
 
 .character-card-box img {
   width: 420px;
-  heigt: 420px;
+  heigt: auto;
   border-radius: 12px;
   border: 2px solid var(--gray-mid);
   box-shadow: 0 0 15px rgba(157, 78, 221, 0.2);
