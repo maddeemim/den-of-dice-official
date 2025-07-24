@@ -99,6 +99,23 @@ h1 {
   margin-top: 0.5rem;
 }
 
+.cast-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap; /* Optional: makes it mobile-friendly */
+}
+
+.cast-row img {
+  width: 350px;  /* Adjust size to match your character card */
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid var(--gray-mid);
+  box-shadow: 0 0 15px rgba(157, 78, 221, 0.2);
+}
+
 /* Footer */
 footer {
   text-align: center;
