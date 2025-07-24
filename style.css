@@ -41,7 +41,7 @@ h1 {
 
 .parallax-wrapper {
   background-image: url('https://maddeemim.github.io/den-of-dice-official/purplebg1.png'); /* update with actual file path */
-  background-size: cover;
+  background-size: 80%;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
