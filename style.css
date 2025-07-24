@@ -104,16 +104,31 @@ h1 {
   justify-content: center;
   align-items: flex-start;
   gap: 2rem;
-  margin-bottom: 3rem;
-  flex-wrap: wrap; /* Optional: makes it mobile-friendly */
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
 }
 
-.cast-row img {
-  width: 350px;  /* Adjust size to match your character card */
+/* Match character card size */
+.character-card-box img {
+  width: 420px;
   height: auto;
   border-radius: 12px;
   border: 2px solid var(--gray-mid);
   box-shadow: 0 0 15px rgba(157, 78, 221, 0.2);
+}
+
+/* Override default .cast-card size */
+.portrait-box.cast-card {
+  width: 420px;
+  min-height: auto;
+  padding: 1.5rem;
+}
+
+.portrait-box img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 1rem;
 }
 
 /* Footer */
