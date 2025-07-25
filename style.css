@@ -59,12 +59,11 @@ h1 {
 }*/
 .cast-grid {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   padding: 4rem 2rem;
   max-width: 1600px;
   margin: 0 auto;
-  flex-wrap: wrap;
 }
 
 /*.cast-card {
