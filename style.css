@@ -31,7 +31,7 @@ h1 {
   font-family: var(--font-header);
   color: var(--accent-purple);
   font-size: 3rem;
-  margin-bottom: 3rem;
+  margin: 0 auto;
 }
 
 .subtitle {
@@ -63,7 +63,7 @@ h1 {
   align-items: center;
   padding: 4rem 2rem;
   max-width: 1600px;
-  margin: 0 auto;
+  margin: 3rem;
 }
 
 /*.cast-card {
