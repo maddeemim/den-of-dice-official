@@ -54,7 +54,23 @@ h1 {
   align-items: center;
   padding: 4rem 2rem;
   max-width: 1600px;
-  margin: 3rem;
+  margin: 3rem auto;
+}
+
+.cast-card {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--gray-mid);
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(157, 78, 221, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+  margin-bottom: 3rem;
 }
 
 .cast-card img {
@@ -74,7 +90,12 @@ h1 {
   box-shadow: 0 0 25px rgba(157, 78, 221, 0.4);
 }
 
-.cast-card img {
+.cast-info {
+  flex: 1;
+  text-align: left;
+}
+
+/*.cast-card img {
   width: 100%;
   height: 620px;
   object-fit: cover;
@@ -84,7 +105,7 @@ h1 {
   border: 2px solid var(--gray-mid);
   background-color: #1a1a1d;
   display: block;
-}
+}*/
 
 .cast-card h2 {
   font-family: var(--font-header);
@@ -104,11 +125,6 @@ h1 {
   color: var(--accent-purple);
   font-size: 1rem;
   margin-top: 0.5rem;
-}
-
-.cast-info {
-  flex: 1;
-  text-align: left;
 }
 
 /* Footer */
